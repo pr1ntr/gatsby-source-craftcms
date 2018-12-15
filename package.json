@@ -32,7 +32,8 @@
     "build": "yarn test && babel src --out-dir . --ignore __tests__",
     "watch": "babel -w src --out-dir . --ignore __tests__",
     "lint": "xo --fix",
-    "prepare": "cross-env NODE_ENV=production npm run build"
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "postinstall": "npm run prepare"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
